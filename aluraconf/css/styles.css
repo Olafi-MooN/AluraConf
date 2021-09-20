@@ -1,0 +1,203 @@
+:root {
+  --color-button-opacity: rgba(128, 128, 128, 0.438);
+  --color-button-opacity-hover: rgba(29, 121, 121, 0.925);
+  --color-font: white;
+  --color-font-title-h3: rgb(37, 153, 47);
+  --color-orange: orangered;
+  --color-blue: rgb(75, 161, 187);
+}
+
+.container-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 50vh;
+  background-image: url("../img/destaque.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-header-nav ul {
+  display: flex;
+}
+
+.container-header-div-button {
+  background-color: var(--color-button-opacity);
+  height: 36px;
+  border-radius: 8px;
+  border: none;
+  list-style: none;
+  color: var(--color-font);
+  font-size: 1.3rem;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 400ms;
+  cursor: pointer;
+}
+
+.container-header-div-button:hover {
+  background-color: var(--color-button-opacity-hover);
+}
+
+.title-alura {
+  margin-top: 20px;
+}
+
+.title-alura h3,
+.title-alura h1 {
+  text-shadow: 0.1em 0.1em 0.2em black;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--color-font);
+}
+
+.title-alura h3 {
+  color: var(--color-font-title-h3);
+  font-size: 2rem;
+}
+
+.container-header-div-button.fixed {
+  transition: none;
+  margin-top: 20px;
+  background-color: var(--color-button-opacity-hover);
+}
+
+.main-section-d-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% -10px);
+  padding: 10px;
+}
+
+.title,
+.main-section-d-flex h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.main-section-d-flex strong {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.text-center,
+.main-section-d-flex P {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.main-section-palestrantes {
+  background-color: orangered;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--color-font);
+}
+
+.color-white {
+  color: var(--color-font);
+}
+
+.container-grid {
+  width: 90%;
+  min-height: 500px;
+  margin-top: auto;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-grid .item {
+  background-color: var(--color-font);
+  width: 200px;
+  height: 270px;
+  min-height: 250px;
+  margin: 40px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.container-grid .item figure img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.container-grid .item figure figcaption {
+  margin-top: 20px;
+}
+
+.container-grid .item figure b {
+  margin: 10px 0;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.container-form {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+.container-form form {
+  width: 100%;
+  padding: 50px;
+}
+.container-form form fieldset legend {
+  width: 100%;
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: var(--color-orange);
+  text-align: center;
+}
+
+.container-form form fieldset .field {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-form form fieldset .field label {
+  margin: 20px 0 8px;
+  font-size: 1.2rem;
+}
+
+.container-form form fieldset .field input {
+  height: 30px;
+  border-radius: 6px;
+  border: solid 2px var(--color-blue);
+  padding-left: 12px;
+}
+
+.container-form form button {
+  background-color: var(--color-blue);
+  display: block;
+  margin: 20px auto;
+  border: none;
+  width: 250px;
+  height: 60px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
